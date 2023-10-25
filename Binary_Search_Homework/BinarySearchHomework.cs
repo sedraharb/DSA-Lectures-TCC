@@ -67,7 +67,12 @@ namespace Binary_Search_Homework // don't edit this line!!!
                     mid--;
                 return ++mid;
             }
-            return mid;
+            else
+            {
+                while (arr[mid] == key)
+                    mid++;
+                return --mid;
+            }
         }
  
        

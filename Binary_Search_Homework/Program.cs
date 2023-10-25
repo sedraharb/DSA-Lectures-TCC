@@ -27,11 +27,11 @@ namespace Binary_Search_Homework
 
             //Console.WriteLine("the number 2 is repeated {0} times", repeat_count);
             int[] arr = { 1, 2, 2, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7, 7, 8, 9 };
-            int key = 5;
+            int key = 9;
 
             // pass true for the first occurrence
-            int first = BinarySearchHomework.BinarySearchForCalculatingRepeated(arr, key, true, 0, arr.Length);
-            Console.WriteLine(first);
+            int last = BinarySearchHomework.BinarySearchForCalculatingRepeated(arr, key, false, 0, arr.Length);
+            Console.WriteLine(last);
 
 
         }
