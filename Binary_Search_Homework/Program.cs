@@ -11,21 +11,29 @@ namespace Binary_Search_Homework
     {
         static void Main(string[] args) // feel free to edit the main method as you like
         {
-            int[] a = new int[] { 1, 2, 4, 4, 5, 6, 7, 8, 9 };
-            int key = 2;
+            //int[] a = new int[] { 1, 2, 4, 4, 5, 6, 7, 8, 9 };
+            //int key = 2;
 
-            int idx = BinarySearchHomework.TernarySearch(a, key, 0, a.Length);
+            //int idx = BinarySearchHomework.TernarySearch(a, key, 0, a.Length);
 
-            Console.WriteLine("Found {0} at index {1} using Ternary Search", key, idx);
+            //Console.WriteLine("Found {0} at index {1} using Ternary Search", key, idx);
 
-            Console.WriteLine("=======================");
+            //Console.WriteLine("=======================");
 
-            int[] arr2 = { 1, 2, 2, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7, 7, 8, 9 };
+            //int[] arr2 = { 1, 2, 2, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7, 7, 8, 9 };
             
 
-            int repeat_count = BinarySearchHomework.GetRepeatCount(arr2, key);
+            //int repeat_count = BinarySearchHomework.GetRepeatCount(arr2, key);
 
-            Console.WriteLine("the number 2 is repeated {0} times", repeat_count);
+            //Console.WriteLine("the number 2 is repeated {0} times", repeat_count);
+            int[] arr = { 1, 2, 2, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7, 7, 8, 9 };
+            int key = 5;
+
+            // pass true for the first occurrence
+            int first = BinarySearchHomework.BinarySearchForCalculatingRepeated(arr, key, true, 0, arr.Length);
+            Console.WriteLine(first);
+
+
         }
     }
 }

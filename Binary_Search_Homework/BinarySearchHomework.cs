@@ -56,11 +56,19 @@ namespace Binary_Search_Homework // don't edit this line!!!
             return -1;
 
         int mid = start + (end - start) / 2;
- 
-       
-        
+
+
+
         if (arr[mid] == key)
+        {
+            if (is_first)
+            {
+                while (arr[mid] == key)
+                    mid--;
+                return ++mid;
+            }
             return mid;
+        }
  
        
         if (arr[mid] > key)
