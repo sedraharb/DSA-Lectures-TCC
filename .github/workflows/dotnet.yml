@@ -31,7 +31,7 @@ jobs:
         
       - name: Build Solution
         run: |
-          msbuild.exe Linked_List_Homework.sln /p:platform="Any CPU" /p:configuration="Release"
+          msbuild.exe Linked_List_Homework/Linked_List_Homework.sln /p:platform="Any CPU" /p:configuration="Release"
 
       - name: Run Tests
-        run: vstest.console.exe Linked_List_Homework_Test\bin\Release\Linked_List_Homework_Test.dll
+        run: vstest.console.exe Linked_List_Homework\Linked_List_Homework_Test\bin\Release\Linked_List_Homework_Test.dll
