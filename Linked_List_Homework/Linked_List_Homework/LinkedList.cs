@@ -78,7 +78,6 @@ namespace Linked_List_Homework
                 move = move.Next;
             }
             move.Next = other_list.First;
-            //other_list.First = this.First;
         }
         public void Reverse()
         {
