@@ -27,7 +27,7 @@ jobs:
         run: cd $GITHUB_WORKSPACE
 
       - name: Restore Packages
-        run: nuget restore Linked_List_Homework.sln
+        run: nuget restore Linked_List_Homework/Linked_List_Homework.sln
         
       - name: Build Solution
         run: |
